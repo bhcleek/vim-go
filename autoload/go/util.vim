@@ -397,7 +397,7 @@ endfunction
 " https://godoc.org/golang.org/x/tools/go/buildutil#ParseOverlayArchive
 "
 " > The archive consists of a series of files. Each file consists of a name, a
-" > decimal file size and the file contents, separated by newlinews. No newline
+" > decimal file size and the file contents, separated by newlines. No newline
 " > follows after the file contents.
 function! go#util#archive()
     let l:buffer = join(go#util#GetLines(), "\n")

@@ -524,6 +524,10 @@ CTRL-t
 
     If [!] is not given the first error is jumped to.
 
+                                                                  :GoExtract
+:GoExtract [to]
+
+    Extract the selected block to a function/method with the desired new name.
 
                                                                 *:GoGuruScope*
 :GoGuruScope [pattern] [pattern2] ... [patternN]
@@ -1116,6 +1120,11 @@ return values and the numbers.
                                                                 *(go-mod-fmt)*
 
 Calls |:GoModFmt| for the current buffer
+
+                                                                 *(go-extract)*
+
+Extract the selection to a new function.
+
 
 ==============================================================================
 TEXT OBJECTS                                                 *go-text-objects*
