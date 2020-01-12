@@ -1182,7 +1182,7 @@ function! s:errorFromDiagnostic(diagnostic, bufname, fname) abort
 
   " the length of the match is the number of bytes between the start of
   " the match and the end of the match.
-  let l:matchLength = line2byte(l:endline) + l:endcol - (line2byte(l:line) + l:col)
+  let l:matchLength = line2byte(l:endline) + l:endcol - (line2byte(l:line) + l:col - 1)
   let l:pos = [l:line, l:col, l:matchLength]
 
   return [l:error, l:pos]
