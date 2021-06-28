@@ -2482,6 +2482,12 @@ rest of the commands and mappings become available after executing
     Mapped to <F6> by default, which will evaluate the <cword> under the
     cursor.
 
+    Methods and functions can be called and their return values printed using
+    `call`:
+>
+    :GoDebugPrint call err.Error()
+<
+
                                                            *go-debug-settings*
 DEBUGGER SETTINGS~
 
